@@ -1,0 +1,22 @@
+<template name="sideMenu">
+    {{#ionSideMenus}}
+        {{#ionSideMenu}}
+            <!--<div class="bar bar-header bar-dark">-->
+                <!--<img src="img-side-left.jpg" alt="" class="full-image">-->
+            <!--</div>-->
+            <div class="content has-header">
+                <div class="list">
+                    <a href="/" class="item item-icon-left item-icon-right" data-ion-menu-close
+                       style="top:55px;">
+                        {{> ionIcon icon="ion ion-home"}}<span>Home</span>
+                    </a>
+                    <!--<a href="/login" class="item item-icon-left item-icon-right js-logout"-->
+                       <!--data-ion-menu-close-->
+                       <!--style="top:55px;">-->
+                        <!--{{> ionIcon icon="ion ion-log-out"}}<span>Exit</span>-->
+                    <!--</a>-->
+                </div>
+            </div>
+        {{/ionSideMenu}}
+    {{/ionSideMenus}}
+</template>

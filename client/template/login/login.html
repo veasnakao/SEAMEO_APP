@@ -1,0 +1,45 @@
+<template name="login">
+    <div class="bar bar-header bar-positive my-bg" style="border-color: transparent;ackground: #356aa0;
+    background: -moz-linear-gradient(45deg, #356aa0 0%, #356aa0 100%);
+    background: -webkit-linear-gradient(45deg, #356aa0 0%,#356aa0 100%);
+    background: linear-gradient(45deg, #356aa0 0%,#356aa0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#356aa0',GradientType=1 );
+">
+    </div>
+    {{#ionView class="my-bg"}}
+        {{#ionContent}}
+            <h1 style="color: white;font-size: 50px;text-align: center;">ប្រព័ន្ធគ្រប់គ្រង ហាងបោកអ៊ុត</h1>
+            <form id="login-form">
+                <div class="list list-inset login-form label-border-username" style="background: none;">
+                    <label class="item item-input login-form" style="background: none;border: 0;outline: 0;">
+                        {{> ionIcon icon="ion ion-person" class="user-icon"}}
+                        <input type="text" id="signup-username" class="js-username" placeholder="ឈ្មេាះអ្នកប្រើប្រាស់">
+                    </label>
+                </div>
+                <div class="list list-inset login-form label-border-password" style="background: none;">
+                    <label class="item item-input login-form" style="background: none;border: 0;outline: 0;">
+                        {{> ionIcon icon="ion ion-locked" class="user-icon"}}
+                        <input class="js-password " type="password" id="signup-password"
+                               placeholder="ពាក្យសម្ងាត់">
+                    </label>
+                </div>
+                <div class="list list-inset" style="background: none;">
+                    <button class="button button-block button-positive js-login" style="background: none;border: 2px white solid;
+    border-radius: 25px;">
+                        {{> ionIcon icon="ion ion-unlocked" class="user-icon"}}
+                        ចូល
+                    </button>
+                </div>
+                <div class="list list-inset" style="background: none;">
+                    <div style="text-align: center;">
+                        <span style="color: white;">ប្រសិនជាអ្នកមិនទាន់មានគណនី </span>
+                        <a href="/signup" style="text-align: center;color: white;font-size: 16px;">ចុះឈ្មេាះ</a>
+                    </div>
+                </div>
+            </form>
+        {{/ionContent}}
+    {{/ionView}}
+</template>
+
+
+

@@ -1,0 +1,178 @@
+.modal {
+    -webkit-box-shadow: 0px 7px 86px -12px rgba(122, 122, 122, 1);
+    -moz-box-shadow: 0px 7px 86px -12px rgba(122, 122, 122, 1);
+    box-shadow: 0px 7px 86px -12px rgba(122, 122, 122, 1);
+    border-radius: 5px;
+}
+
+.bar.bar-header.bar-dark img {
+    min-height: 100px;
+    margin-bottom: 100px;
+}
+
+.bar.bar-dark {
+    background-color: white;
+    border-color: white;
+    padding: 0;
+}
+
+.my-icon {
+    font-size: 50px;
+}
+
+/*button-full footer*/
+/*div.footer-button a.button.button-full {*/
+/*width:100%;*/
+/*margin-top: 0*/
+/*}*/
+
+.red-cell {
+    font-size: 50px; /* Or some other color */
+}
+
+img {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.pane {
+    /*background: url('/beauty_face.jpg') no-repeat center center fixed;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    linear-gradient: (
+            rgba(255, 0, 0, 0.45),
+            rgba(255, 0, 0, 0.45)
+    );
+}
+.home-bg{
+    /*background: url('/beauty-salon-shop.jpg') no-repeat center center fixed;*/
+    background: url('/1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#my-bar .bar .bar-header .bar-positive{
+    background-color: red;
+}
+.login-form{
+    border: 0;
+    outline: 0;
+    background: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.form-border-bottom{
+    border: 0;
+    outline: 0;
+    background: none;
+    border-bottom: 1px solid darkgreen;
+    color: white;
+}
+.login-form input::-webkit-input-placeholder, .box textarea::-webkit-input-placeholder {
+    color: white;
+    font-size: 15px;
+}
+.login-form input[type=text]{
+    color: white;
+    font-size: 18px;
+}
+.login-form input[type=password]{
+    color: white;
+    font-size: 18px;
+}
+.login-button input[type=button]{
+    background-color: #4CAF50;
+    border: 2px white solid;
+    border-radius: 15px;
+}
+.user-icon{
+    font-size: 35px;
+    color: white;
+    padding-right: 30px;
+}
+.my-bg{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#87e0fd+0,53cbf1+40,05abe0+100;Blue+3D+%23+16 */
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00b7ea+0,009ec3+100;Blue+3D+%2315 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#356aa0+0,356aa0+100;Blue+Flat */
+    background: #356aa0; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #356aa0 0%, #356aa0 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #356aa0 0%,#356aa0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #356aa0 0%,#356aa0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#356aa0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+.d{
+    background: #356aa0;
+    background: -moz-linear-gradient(45deg, #356aa0 0%, #356aa0 100%);
+    background: -webkit-linear-gradient(45deg, #356aa0 0%,#356aa0 100%);
+    background: linear-gradient(45deg, #356aa0 0%,#356aa0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#356aa0',GradientType=1 );
+
+}
+
+.my-col{
+    border: solid 1px grey;
+    border-bottom-style: none;
+    border-right-style: none;
+}
+
+.service-report{
+    width: 260px;margin: 0 auto;
+    -webkit-box-shadow: 0px 1px 45px -9px rgba(191,191,191,1);
+    -moz-box-shadow: 0px 1px 45px -9px rgba(191,191,191,1);
+    box-shadow: 0px 1px 45px -9px rgba(191,191,191,1);
+}
+
+.service-rp-content{
+    font-size: 11px;
+}
+.report-content {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #000000;
+
+}
+.content-header th {
+    background-color: #d0d2d0;
+    padding: 3px;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #555555;
+}
+.content-body td {
+    padding: 3px;
+    font-size: 11px;
+    border: 1px solid #555555;
+}
+
+.profit tr{
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
+.login-container {
+    /*opacity: 0.8;*/
+    /*background: rgba(255, 255, 255, 0.5);*/
+    /*background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);*/
+    /*background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0.5)));*/
+    /*background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);*/
+    /*background: -o-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);*/
+    /*background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);*/
+    /*background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);*/
+
+    /*margin-top: 30px;*/
+    /*border-radius: 7px;*/
+    /*padding-bottom: 30px;*/
+}
+

@@ -1,0 +1,124 @@
+<template name="staffInfo">
+    {{#if currentUser}}
+        {{#if isInRole 'setting'}}
+            <div class="bar bar-header bar-positive nav-bar-block nav-bar-transition-ios nav-bar-direction-forward"
+                 data-navbar-container="">
+                <button class="button button-clear pull-left button-entering button-active">
+                    <a href="/showStaff">
+                        <button class="buttons button button-clear back-button pull-left">
+
+                            <!--{{>ionNavBackButton path="setting"}}-->
+                            <i class="icon ion-ios-arrow-back"></i>
+                            <span class="back-text">ថយក្រោយ</span>
+                        </button>
+                    </a>
+                </button>
+                <h1 class="title">បុគ្គលិក</h1>
+            </div>
+
+            <!--{{#contentFor "headerButtonLeft"}}-->
+                <!--{{>ionNavBackButton path="showStaff"}}-->
+            <!--{{/contentFor}}-->
+
+            <!--{{#contentFor "headerTitle"}}-->
+                <!--<h1 class="title">Staff Info</h1>-->
+            <!--{{/contentFor}}-->
+
+            <!--{{#contentFor "headerButtonRight"}}-->
+                <!--<button class="button button-clear pull-left" data-ion-modal="editStaff" data-id="{{staffInfo._id}}">-->
+                    <!--{{> ionIcon icon="ion ion-edit"}}-->
+                <!--</button>-->
+            <!--{{/contentFor}}-->
+
+            {{#ionView}}
+                {{#ionContent}}
+                    {{#ionList}}
+                        {{#with staffInfo}}
+                            {{#ionItem}}
+                                <div class="row">
+                                    <div class="col col-33 col-offset-10"><h2>ឈ្មេាះ</h2></div>
+                                    <div class="col"><h2>:</h2></div>
+                                    <div class="col col-80">
+                                        <h2>{{name}}</h2>
+                                    </div>
+                                </div>
+                            {{/ionItem}}
+                            {{#ionItem}}
+                                <div class="row">
+                                    <div class="col col-33 col-offset-10"><h2>ភេទ</h2></div>
+                                    <div class="col"><h2>:</h2></div>
+                                    <div class="col col-80">
+                                        <h2>{{gender}}</h2>
+                                    </div>
+                                </div>
+                            {{/ionItem}}
+                            <!--{{#ionItem}}-->
+                                <!--<div class="row">-->
+                                    <!--<div class="col col-33 col-offset-10"><h2>Work Date</h2></div>-->
+                                    <!--<div class="col"><h2>:</h2></div>-->
+                                    <!--<div class="col col-80">-->
+                                        <!--<h2>{{moFormat workDate 'MM/DD/YYYY'}}</h2>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--{{/ionItem}}-->
+                            <!--{{#ionItem}}-->
+                                <!--<div class="row">-->
+                                    <!--<div class="col col-33 col-offset-10"><h2>Fee (%)</h2></div>-->
+                                    <!--<div class="col"><h2>:</h2></div>-->
+                                    <!--<div class="col col-80">-->
+                                        <!--<h2>{{fee}} %</h2>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--{{/ionItem}}-->
+                            {{#ionItem}}
+                                <div class="row">
+                                    <div class="col col-33 col-offset-10"><h2>ប្រាក់ខែគោល ($)</h2></div>
+                                    <div class="col"><h2>:</h2></div>
+                                    <div class="col col-80">
+                                        <h2>{{numFormat baseSalary '0,0.00 $'}}</h2>
+                                    </div>
+                                </div>
+                            {{/ionItem}}
+                            {{#ionItem}}
+                                <div class="row">
+                                    <div class="col col-33 col-offset-10"><h2>ស្ថានភាព</h2></div>
+                                    <div class="col"><h2>:</h2></div>
+                                    <div class="col col-80">
+                                        <h2>{{status}}</h2>
+                                    </div>
+                                </div>
+                            {{/ionItem}}
+                            {{#ionItem}}
+                                <div class="row">
+                                    <div class="col col-33 col-offset-10"><h2>ទូរស័ព្ទ</h2></div>
+                                    <div class="col"><h2>:</h2></div>
+                                    <div class="col col-80">
+                                        <h2>{{tel}}</h2>
+                                    </div>
+                                </div>
+                            {{/ionItem}}
+                        {{/with}}
+                    {{/ionList}}
+                    <div class="row">
+                        <div class="col">
+                            <button class="button button-block button-assertive delete-staff">
+                                {{> ionIcon icon="ion ion-trash-a"}} លុប
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="button button-block button-positive" data-ion-modal="editStaff"
+                                    data-id="{{staffInfo._id}}">
+                                {{> ionIcon icon="ion ion-edit"}} កែប្រែ
+                            </button>
+                        </div>
+                    </div>
+
+                {{/ionContent}}
+            {{/ionView}}
+        {{else}}
+            {{> checkRoleUser}}
+        {{/if}}
+    {{else}}
+        {{> login}}
+    {{/if}}
+</template>
