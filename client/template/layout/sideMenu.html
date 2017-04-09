@@ -1,20 +1,35 @@
+<template name="sideMenuLeft">
+    {{#contentFor "headerButtonLeft"}}
+        <button class="button button-clear pull-left" data-ion-menu-toggle="left">
+            {{> ionIcon icon='navicon'}}
+        </button>
+    {{/contentFor}}
+</template>
+
+<template name="sideMenuRight">
+    {{#contentFor "headerButtonRight"}}
+        <button class="button button-clear pull-right" data-ion-menu-toggle="right">
+            {{> ionIcon icon='navicon'}}
+        </button>
+    {{/contentFor}}
+</template>
+
 <template name="sideMenu">
     {{#ionSideMenus}}
         {{#ionSideMenu}}
-            <!--<div class="bar bar-header bar-dark">-->
+            <div class="bar bar-header bar-dark">
                 <!--<img src="img-side-left.jpg" alt="" class="full-image">-->
-            <!--</div>-->
+            </div>
             <div class="content has-header">
                 <div class="list">
                     <a href="/" class="item item-icon-left item-icon-right" data-ion-menu-close
                        style="top:55px;">
                         {{> ionIcon icon="ion ion-home"}}<span>Home</span>
                     </a>
-                    <!--<a href="/login" class="item item-icon-left item-icon-right js-logout"-->
-                       <!--data-ion-menu-close-->
-                       <!--style="top:55px;">-->
-                        <!--{{> ionIcon icon="ion ion-log-out"}}<span>Exit</span>-->
-                    <!--</a>-->
+                    <a href="/" class="item item-icon-left item-icon-right" data-ion-menu-close
+                       style="top:55px;">
+                        {{> ionIcon icon="ion ion-home"}}<span>Home</span>
+                    </a>
                 </div>
             </div>
         {{/ionSideMenu}}
