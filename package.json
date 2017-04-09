@@ -1,5 +1,5 @@
 {
-  "name": "beauty-shop",
+  "name": "seameo-app",
   "private": true,
   "scripts": {
     "start": "meteor run"
