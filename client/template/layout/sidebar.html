@@ -1,3 +1,4 @@
+<!--top left button-->
 <template name="sideMenuLeft">
     {{#contentFor "headerButtonLeft"}}
         <button class="button button-clear pull-left" data-ion-menu-toggle="left">
@@ -5,7 +6,7 @@
         </button>
     {{/contentFor}}
 </template>
-
+<!--top right button-->
 <template name="sideMenuRight">
     {{#contentFor "headerButtonRight"}}
         <button class="button button-clear pull-right" data-ion-menu-toggle="right">
@@ -18,18 +19,11 @@
     {{#ionSideMenus}}
         {{#ionSideMenu}}
             <div class="bar bar-header bar-dark">
-                <!--<img src="img-side-left.jpg" alt="" class="full-image">-->
+                <img src="seameo_text.png" alt="" class="full-image">
             </div>
             <div class="content has-header">
                 <div class="list">
-                    <a href="/" class="item item-icon-left item-icon-right" data-ion-menu-close
-                       style="top:55px;">
-                        {{> ionIcon icon="ion ion-home"}}<span>Home</span>
-                    </a>
-                    <a href="/" class="item item-icon-left item-icon-right" data-ion-menu-close
-                       style="top:55px;">
-                        {{> ionIcon icon="ion ion-home"}}<span>Home</span>
-                    </a>
+                    {{> sidebarMenu}}
                 </div>
             </div>
         {{/ionSideMenu}}

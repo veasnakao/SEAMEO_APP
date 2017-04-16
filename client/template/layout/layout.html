@@ -1,11 +1,15 @@
 <template name="layout">
     {{#ionBody}}
         {{#ionSideMenuContainer}}
+            <!--call sideMenu tmpl-->
             {{> sideMenu}}
             {{#ionSideMenuContent}}
                 {{> ionNavBar class="bar-assertive"}}
                 {{#ionNavView}}
+                    <!--s alert-->
                     {{> sAlert}}
+
+                    <!--dynamic content-->
                     {{> yield}}
                 {{/ionNavView}}
             {{/ionSideMenuContent}}

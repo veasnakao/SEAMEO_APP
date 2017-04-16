@@ -24,22 +24,11 @@ insecure                # Allow all DB writes from clients (for prototyping)
 meteoric:ionic-sass
 meteoric:ionicons-sass
 meteoric:ionic
-meteoric:autoform-ionic
 
 #router
 iron:router
 
-#simple-schema and collection2
-aldeed:simple-schema
-aldeed:collection2
-
-#theara
-theara:id-generator
-aldeed:autoform
-
-#alert
-#themeteorchef:bert
-#ovcharik:alertifyjs
+#sAlert
 juliancwirko:s-alert
 juliancwirko:s-alert-scale
 juliancwirko:s-alert-slide
@@ -48,25 +37,7 @@ juliancwirko:s-alert-jelly
 juliancwirko:s-alert-flip
 juliancwirko:s-alert-bouncyflip
 juliancwirko:s-alert-stackslide
-numeral:numeral
-theara:numeral-helpers
-momentjs:moment
-sergeyt:typeahead
-vazco:universe-autoform-select
+
+
 session
 natestrauser:animate-css
-meteorhacks:aggregate
-matb33:collection-hooks
-ryanswapp:datetime-picker
-
-notorii:autoform-datetimepicker
-ejson
-risul:moment-timezone
-lbee:moment-helpers
-accounts-password
-simple:reactive-method
-stevezhu:lodash
-kevohagan:sweetalert
-paulkr:overhang
-alanning:roles
-ecwyne:mathjs

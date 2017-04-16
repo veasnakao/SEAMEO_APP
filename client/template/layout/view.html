@@ -1,0 +1,20 @@
+<template name="view">
+    <!--***barIcon***routeTo***title***-->
+
+    <!--top left button-->
+    {{#if barIcon}} {{> sideMenuLeft}} {{/if}}
+
+    {{#if routeTo}}
+        {{#contentFor "headerButtonLeft"}} {{>ionNavBackButton path=routeTo}} {{/contentFor}}
+    {{/if}}
+
+    <!--middle title-->
+    {{#contentFor "headerTitle"}}
+        <h1 class="title">{{#if title}} {{title}} {{else}} Untitled {{/if}}</h1>
+    {{/contentFor}}
+
+    <!--content body-->
+    {{#ionView}}
+        {{#ionContent}} {{> Template.contentBlock}} {{/ionContent}}
+    {{/ionView}}
+</template>

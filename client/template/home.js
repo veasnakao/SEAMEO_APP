@@ -1,13 +1,19 @@
 //declare tmpl
-let indexTmpl = Template.index;
+let indexTmpl = Template.home;
+
+
+indexTmpl.helpers({
+    params(barIcon, routeTo, title){
+        return {
+            barIcon:'true',
+            title:'www.SEAMEO.org'
+        }
+    }
+});
 
 indexTmpl.events({
     'click .js-info' (event, instance) {
-        // debugger;
-        let url = $('.js-info').val();
-        // Router.go(`/info`);
-        // let a = $(this).val();
-        // console.log($(this).val());
+        let url = event.currentTarget.value;
         Router.go(`/info/${encodeURIComponent(url)}`);
     },
     'click .js-fb' (event, instance){
