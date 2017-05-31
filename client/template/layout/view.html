@@ -5,12 +5,14 @@
     {{#if barIcon}} {{> sideMenuLeft}} {{/if}}
 
     {{#if routeTo}}
-        {{#contentFor "headerButtonLeft"}} {{>ionNavBackButton path=routeTo}} {{/contentFor}}
+        {{#contentFor "headerButtonLeft"}}
+            {{>ionNavBackButton path=routeTo text="Back"}}
+        {{/contentFor}}
     {{/if}}
 
     <!--middle title-->
     {{#contentFor "headerTitle"}}
-        <h1 class="title">{{#if title}} {{title}} {{else}} Untitled {{/if}}</h1>
+        <h1 class="title text-center">{{#if title}} {{title}} {{else}} Untitled {{/if}}</h1>
     {{/contentFor}}
 
     <!--content body-->

@@ -14,9 +14,59 @@
 
 #p {
     text-align: justify;
+    font-size: 15px;
 }
 
 #flag {
     height: 30px;
     width: auto;
+}
+
+.img-center {
+    height: 140px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-top: 1px solid #CA740F;
+    border-left: 1px solid #CA740F;
+    border-right: 1px solid #CA740F;
+    alignment: center;
+}
+td, th {
+    border-top: 1px solid #CA740F;
+    border-bottom: 1px solid #CA740F;
+    /*border-right: 1px solid #ddd;*/
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+.tbl-header{
+    background-color: #CA740F;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.v-align{
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.card-header{
+    background-color: #EF473A;
+    color: #ffffff;
 }

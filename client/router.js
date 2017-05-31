@@ -3,17 +3,28 @@ Router.configure({
 });
 
 Router.map(function () {
-    //tmpl name && path
+    // tmpl name && path
     this.route('home', {
         path: '/'
     });
 
-
-
-    this.route('info', {
-        path: '/info/:url',
+//---------------------------------
+    /*MENU 7Pri*/
+    this.route('pri7', {
+        path: '/pri7',
     });
+    /*SUB-MENU*/
+    this.route('p1', {
+        path: '/p1',
+    });
+// //---------------------------------
 
+
+    // this.route('info', {
+    //     path: '/info/:url',
+    // });
+
+    //---------------------------
     this.route('about', {
         path: '/about-us',
     });
