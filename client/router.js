@@ -17,6 +17,15 @@ Router.map(function () {
     this.route('p1', {
         path: '/p1',
     });
+//---------------------------------
+    /*MENU seameo centre*/
+    this.route('centre', {
+        path: '/centre',
+    });
+    /*SUB-MENU*/
+    this.route('bio', {
+        path: '/bio',
+    });
 // //---------------------------------
 
 

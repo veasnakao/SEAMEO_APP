@@ -30,7 +30,6 @@
     margin-right: auto;
 }
 
-
 @media screen and (max-width: 640px) {
     table {
         overflow-x: auto;
@@ -38,7 +37,8 @@
     }
 }
 
-table {
+/*for pri 7*/
+.table-pri {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
@@ -47,6 +47,7 @@ table {
     border-right: 1px solid #CA740F;
     alignment: center;
 }
+
 td, th {
     border-top: 1px solid #CA740F;
     border-bottom: 1px solid #CA740F;
@@ -55,18 +56,67 @@ td, th {
     font-size: 13px;
 }
 
-.tbl-header{
+.tbl-header {
     background-color: #CA740F;
     color: #ffffff;
     font-weight: bold;
 }
 
-.v-align{
+.v-align {
     vertical-align: middle;
     font-weight: bold;
 }
 
-.card-header{
+.card-header {
     background-color: #EF473A;
     color: #ffffff;
+}
+
+.bar .title {
+    text-align: center;
+}
+
+/*centre card*/
+.centre-card {
+    padding-top: 8px;
+    padding-left: 70px;
+    min-height: 0;
+}
+
+/*centre logo*/
+.item-thumbnail-left > img:first-child, .item-thumbnail-left .item-image, .item-thumbnail-left .item-content > img:first-child, .item-thumbnail-left .item-content .item-image {
+    top: 4px;
+    left: 10px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.table-centre {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    /*border-top: 1px solid gray;*/
+    border-left: 1px solid gray;
+    /*border-right: 1px solid gray;*/
+    alignment: center;
+}
+
+.td, .th {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    /*border-left: 1px solid gray;*/
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+.th {
+    width: 80px;
+}
+
+.contact-icon {
+    position: relative;
+    /* Adjust these values accordingly */
+    /*top: 5px;*/
+    left: 5px;
 }

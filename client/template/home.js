@@ -6,7 +6,7 @@ indexTmpl.helpers({
     params(barIcon, routeTo, title){
         return {
             barIcon:'true',
-            title:'SEAMEO'
+            title:' '
         }
     }
 });
